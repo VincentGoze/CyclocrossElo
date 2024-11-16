@@ -1,0 +1,31 @@
+{% extends "master.html" %}
+
+
+{% block title %}
+  Detail
+{% endblock %}
+
+{% block content %}
+<div class="table-container"> 
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Rider</th>
+        <th>Rating</th>
+        <th>Rating change</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for  x in rider_data %}
+      <tr>
+        <td>{{x.rider.current_position}} ({{x.position_change_str}})</td>
+        <td><a href="/riders/{{ x.rider.id }}">{{ x.rider }}</a></td>
+        <td>{{x.rider.rating}} </td>
+        <td><span class="rating-change {% if x.rider.rating_change > 0 %}positive{% elif x.rider.rating_change == 0 %}null{% else %}negative{% endif %}">{{x.rider.rating_change}}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

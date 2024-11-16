@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<body>
+<div class="navbar">
+    <div class="navbar-logo">
+        <a href="/main">CX Elo</a>
+    </div>
+    <div class="navbar-links">
+        <a href="/riders">Rider Search</a>
+        <a href="/races">Races</a>
+        <a href="/ranking">ME</a>
+        <a href="/ranking2">WE</a>
+        <a href="/ranking3">MJ</a>
+        <a href="/ranking4">WJ</a>
+        <a href="/ranking5">MU</a>
+        <a href="/ranking6">WU</a>
+        <a href="/change">Rating changes</a>
+    </div>
+</div>
+
+<div class="main-content">
+{% block content %}
+{% endblock %}
+</div>
+
+</body>
+</html>

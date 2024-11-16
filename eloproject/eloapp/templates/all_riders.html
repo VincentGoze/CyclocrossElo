@@ -1,0 +1,27 @@
+{% extends "master.html" %}
+
+{% block title %}
+  List of Riders
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="page-title">Riders</h1>
+
+    <!-- Search form -->
+    <form method="get" action="/riders">
+        <input type="text" name="q" placeholder="Search riders by name" value="{{ request.GET.q }}">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="rider-list">
+        {% for x in allriders %}
+            <div class="rider-card">
+                <a href="{{ x.id }}">
+                    <h2>{{ x.firstname }} {{ x.lastname }}</h2>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

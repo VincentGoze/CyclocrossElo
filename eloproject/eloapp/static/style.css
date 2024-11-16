@@ -1,0 +1,606 @@
+body {
+  background-color: lightblue;
+  font-family: verdana;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ff9800; /* Add a hover color for effect */
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links on small screens */
+    }
+    
+    /* Add mobile menu toggle styles here if needed */
+}
+
+
+.main-content {
+    padding-top: 64px; /* Adjust this to match your navbar height */
+}
+
+
+
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Rider List Layout */
+.rider-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Rider Card */
+.rider-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.rider-card:hover {
+    transform: translateY(-5px);
+}
+
+.rider-card h2 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word; /* Breaks long words */
+    white-space: normal; /* Allows text to wrap onto multiple lines */
+    max-width: 100%;
+}
+.rider-card a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+.rider-card a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
+
+
+/* Container for member details */
+.member-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Member Name */
+.member-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.member-rating {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Race Results List */
+.race-results {
+    list-style-type: none;
+    padding: 0;
+}
+
+.race-result {
+    display: grid;                   
+    grid-template-columns: 1fr 100px 1fr 2fr; /* Added space for rating-change */
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.race-result:last-child {
+    border-bottom: none;
+}
+
+/* Individual elements */
+.race-date {
+    font-weight: bold;
+    color: #555;
+}
+
+.race-position {
+    text-align: center;              
+    font-style: italic;
+    color: #777;
+    min-width: 100px;               /* Ensure minimum width */
+}
+
+/* Enhanced Race Link */
+.race-link {
+    text-decoration: none;
+    background-color: #f0f4ff;
+    color: #2d5aa8;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #e0e8ff;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.race-link:hover {
+    background-color: #2d5aa8;
+    color: white;
+    border-color: #2d5aa8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(45, 90, 168, 0.2);
+}
+
+/* Back Link */
+.back-link {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.2s;
+}
+
+.back-link a:hover {
+    color: #0056b3;
+}
+
+
+/* Container for the list of races */
+.races-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Page title */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Races list styling */
+.races-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.race-item {
+    margin-bottom: 1rem;
+}
+
+.race-link {
+    display: flex;                      /* Flexbox for layout */
+    justify-content: space-between;      /* Space between name and date */
+    align-items: center;                 /* Center items vertically */
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.race-link:hover {
+    background-color: #f0f8ff;           /* Light blue on hover */
+}
+
+.race-name {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.race-date {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+
+/* Container for race detail */
+.race-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.race-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.race-date {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+    margin-left: 1rem;
+}
+
+/* Race results list */
+.race-results-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.race-result-item {
+    display: flex;                     /* Flexbox layout for alignment */
+    align-items: center;               /* Center vertically */
+    justify-content: space-between;     /* Space between position and rider name */
+    padding: 0.8rem 1rem;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.race-result-item:hover {
+    background-color: #f0f8ff;         /* Light blue background on hover */
+}
+
+.position {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    width: 50px;                       /* Fixed width to align positions */
+    text-align: center;
+}
+
+.rider-link {
+    font-size: 1.1rem;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.rider-link:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #007acc;
+    text-align: center;
+}
+
+
+.race-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.race-container h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.podium-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.podium-list li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.position {
+    font-weight: bold;
+    color: #444;
+    width: 40px; /* fixed width for alignment */
+    text-align: center;
+}
+
+.rider {
+    color: #007bff;
+}
+
+.rider a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.rider a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the main race container */
+.race-container {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Link styling for race titles */
+.race-container h2 a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.race-container h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the podium list */
+.podium-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.podium-list li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Position number styling */
+.position {
+    font-weight: bold;
+    margin-right: 15px;
+    color: #444;
+}
+
+/* Rider name styling */
+.rider a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.rider a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styling for the .race-category span */
+.race-category {
+    display: block;
+    font-weight: bold;
+    color: #ffffff; /* White text for contrast */
+    background-color: #ff6f61; /* Bold color to stand out, adjust as needed */
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for a lifted effect */
+    text-transform: uppercase; /* Make it all caps for emphasis */
+    letter-spacing: 0.5px;
+}
+
+
+
+
+/* Example styling */
+form {
+    margin-bottom: 20px;
+}
+input[name="q"] {
+    padding: 8px;
+    width: 200px;
+}
+button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.race-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.race-results-table th, .race-results-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.race-results-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.race-results-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.race-results-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.race-results-table td {
+    text-align: center;
+}
+
+.race-results-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+/* Table container for centering and spacing */
+.table-container {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Header colors */
+table thead {
+  background-color: #3b5998; /* Deep blue */
+  color: #ffffff;           /* White text */
+  font-weight: bold;
+}
+
+/* Even row background color */
+table tbody tr:nth-child(even) {
+  background-color: #e9effb; /* Light blue-gray */
+}
+
+/* Hover effect color */
+table tbody tr:hover {
+  background-color: #d4e1fa; /* Slightly darker blue-gray */
+}
+
+/* Link styling */
+table td a {
+  color: #3b5998; /* Deep blue for links */
+  text-decoration: none;
+}
+
+table td a:hover {
+  color: #1d3a75; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+
+/* Rating Change Styling */
+.rating-change {
+    font-weight: bold;
+    color: #d9534f; /* Red color for negative change (customize as needed) */
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Add background color for positive/negative ratings */
+.rating-change.positive {
+    color: #5cb85c; /* Green for positive rating change */
+}
+.rating-change.negative {
+    color: #d9534f; /* Red for negative rating change */
+}
+.rating-change.null {
+    color: #808080; /* Grey for no rating change */
+}
+
+/* Example if you want to apply color conditionally */
+.rating-change.positive::before {
+    content: "+";
+}

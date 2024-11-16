@@ -1,0 +1,26 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Detail
+{% endblock %}
+
+{% block content %}
+<div class="race-detail-container">
+    <h1 class="race-title">{{ race.name }} <span class="race-date">{{ race.date }}</span></h1>
+  
+    <ul class="race-results-list">
+        {% for x in race_results %}
+         {% if x.position == 1 %}
+            <span class="race-category" id=race{{x.category_order}}> {{x.race_category}}</span>
+            {% endif %} 
+        <li class="race-result-item">
+            <span class="position">{{ x.position }}</span>
+            <span class="rating-change {% if x.rating_difference > 0 %}positive{% elif x.rating_difference == 0 %} null {% else %}negative{% endif %}">{{ x.rating_difference }}</span>
+            <a href="/riders/{{ x.rider.id }}" class="rider-link">{{ x.rider }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="back-link">Back to <a href="/riders">Riders</a></p>
+</div>
+{% endblock %}

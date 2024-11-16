@@ -1,0 +1,22 @@
+{% extends "master.html" %}
+
+{% block title %}
+  List of races
+{% endblock %}
+
+{% block content %}
+<div class="races-list-container">
+    <h1 class="page-title">Races</h1>
+  
+    <ul class="races-list">
+        {% for x in allraces %}
+        <li class="race-item">
+            <a href="/races/{{ x.id }}" class="race-link">
+                <span class="race-name">{{ x.name }}</span>
+                <span class="race-date">{{ x.date }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
