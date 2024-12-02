@@ -6,36 +6,29 @@
 
 {% block content %}
 <div class="container">
-    <h1 class="page-title">Best and worst progression compared to last week</h1>
-
-
-  
-    <ul class="race-results-list">
-        {% for x in data %}
-        {% for i, rider in x %}
-         {% if i == 1 %}
-            <span class="race-category"> {{rider.ratingtype}}</span>
-            {% endif %} 
-        <li class="race-result-item">
-            <span class="position">{{ i }}</span>
-            <span class="rating-change {% if rider.rating_change > 0 %}positive{% elif rider.rating_change == 0 %} null {% else %}negative{% endif %}">{{ rider.rating_change }}</span>
-            <a href="/riders/{{ rider.id }}" class="rider-link">{{ rider }}</a>
-        </li>
-        {% endfor %}
-        {% endfor %}
-    </ul>
-
+    <h1 class="page-title">Best and Worst Progression Compared to Last Week</h1>
     
-
-    <div class="rider-list">
+    <div class="ranking-container">
         {% for x in data %}
-            {% for rider in x %}
+        {% if forloop.counter0|divisibleby:2 %}
+        <div class="ranking-row">
+        {% endif %}
+        <div class="ranking-column">
             
-                <a href="/riders/{{ rider.id }}">
-                    <h2>{{ rider.firstname }} {{ rider.lastname }} {{rider.rating_change}}</h2>
-                </a>
-            
-            {% endfor %}
+            <ul class="race-results-list">
+                {% for i, rider in x %}
+                <li class="race-result-item">
+                    <span class="position">{{ i }}</span>
+                    
+                    <a href="/riders/{{ rider.id }}" class="rider-link">{{ rider }}</a>
+                    <span class="rating-change {% if rider.rating_change > 0 %}positive{% elif rider.rating_change == 0 %} null {% else %}negative{% endif %}">{{ rider.rating_change }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% if forloop.counter|divisibleby:2 or forloop.last %}
+        </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>

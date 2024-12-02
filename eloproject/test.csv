@@ -1,45 +1,30 @@
 place,prenom,nom,racecategory,racename,date
-1,Giel,LEJEUNE,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-2,Keano,GEENS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-3,Ryan,LAENEN,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-4,Lennes,JACOBS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-5,Stan,VAN LOOY,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-6,Mathias,DE KEERSMAEKER,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-7,Arthur,JANSSENS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-8,Leander,DE GENDT,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-9,Xander,DANCKAARTS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-10,Dima,ROELS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-11,Matteo,VANDEN WIJNGAERT,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-12,Stan,DERAM,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-13,Luca,RENDERS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-14,Vince,IVENS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-15,Dani,MAENEN,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-16,Joachim,LUIJENDIJK,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-17,Sebastiaan,GOOSSENAERTS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-18,Len,GEERTS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-19,Yoram,KNAEPEN,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-20,Maike,TAZELAAR,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-21,Matse,LEYS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-22,Matteo,DECLERCQ,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-23,Myrddin,DE CORTE,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-24,Roan,DRESSELAERS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-25,Josse,JACOBS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-26,Axel,SCHEPENS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-27,Rune,DE ZUTTER,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-28,Mathis,RICHEZ,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-29,Daan,URKENS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-30,Lander,HULSMANS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-31,Seppe,VANHOUT,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-32,Arne,PARTHOENS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-33,Jetze,BEETS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-34,Jonas,VERMIERT,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-35,Joppe,GOOVAERTS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-36,Briek,ADAMS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-37,Senne,AERTS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-38,Arne,ONGHENA,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-39,Bernd,VAN BOUWEL,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-40,Joël,WILLEMSEN,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-41,Jonas,LOENDERS,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-42,Jairo,DE GRAUWE,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-43,Rune,CLAES,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
-44,Senne,MEEUWES,Men Junior,Superprestige Niel - Jaarmarktcross 2024,11 November 2024
+1,Lidia,CUSACK,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+2,Lison,DESPREZ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+3,Rafaelle,CARRIER,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+4,Mae,CABACA,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+5,Amálie,GOTTWALDOVÁ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+6,Zelie,LAMBERT,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+7,Lise,REVOL,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+8,Barbora,BUKOVSKÁ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+9,Giorgia,PELLIZOTTI,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+10,Greta,LAWLESS,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+11,Jeanne,DUTERNE,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+12,Lorena,PATINO VILLANUEVA,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+13,Nico,KNOLL,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+14,Ellie,MITCHINSON,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+15,Mille,FOLDAGER NIELSEN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+16,Arabella,BLACKBURN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+17,Noï,MOES,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+18,Sanne,LAURIJSSEN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+19,Zoe,ROCHE,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+20,Sara Aaboe,KALLESTRUP,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+21,Alyssa,WHITE,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+22,Zita,PEETERS,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+23,Lyllie,SONNEMANN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+24,Anna,PATTERSON,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+25,Nicole,CLAMANN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+26,Ana,LOPEZ BURGOS,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+27,Carmela,SOLARES GONZALEZ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+28,Aoife,O'DONOVAN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+29,Ava,SHIPMAN,Women Junior,UCI World Cup Dublin 2024,1 December 2024

@@ -101,17 +101,44 @@ class Command(BaseCommand):
                 
                 #Calculate elo ratings
                 bulklist=[]
+                n_results=len(resultslist)
                 for i in resultslist:
                     rtgchange=0
-                    for j in resultslist:
-                        if j!=i:
-                            chg=calculate_elo_change(i.previous_rating,j.previous_rating,int(i.position)<int(j.position))
-                            rtgchange+=chg
-                            self.stdout.write(
-                                self.style.SUCCESS(
-                                f'Rating change: {i.rider} gained {chg} points in the duel with {j.rider}'
-                                )
-                                )
+                    
+
+                    # For smaller races, compare against all other rider
+                    if(n_results<32):
+                        for j in resultslist:
+                            if j!=i:
+                                chg=calculate_elo_change(i.previous_rating,j.previous_rating,int(i.position)<int(j.position))
+                                rtgchange+=chg
+                                self._log_rating_change(i.rider, j.rider, chg)
+                    
+                    else: #To avoid too much rating changes in races with a lot of riders, we calculate rating changes only for the 3O closest riders in the race. Implemented the 24/11/24
+                        comparison_riders = []
+                        rider_pos = int(i.position)
+
+                        if rider_pos <= 16:
+                            # Front group: compare with first 31 riders
+                            comparison_riders = [j for j in resultslist if int(j.position) <= 31 and j != i]
+                        elif rider_pos >= n_results - 15:
+                            # Back group: compare with last 30 riders
+                            comparison_riders = [j for j in resultslist if int(j.position) >= n_results - 30 and j != i]
+                        else:
+                            # Middle group: compare with 15 riders ahead and behind
+                            comparison_riders = [j for j in resultslist if j != i and abs(int(j.position) - rider_pos) <= 15]
+
+
+
+                        for j in comparison_riders:
+                            chg = calculate_elo_change(
+                                i.previous_rating,
+                                j.previous_rating,
+                                int(i.position) < int(j.position)
+                            )
+                            rtgchange += chg
+                            self._log_rating_change(i.rider, j.rider, chg)
+                        
                     self.stdout.write('-----------------------------------------')
                     i.new_rating=round(rtgchange+i.new_rating,1)
                     bulklist.append(i)
@@ -149,3 +176,11 @@ class Command(BaseCommand):
             self.stdout.write(
                 self.style.ERROR(f'Error importing riders: {str(e)}')
             )
+
+    def _log_rating_change(self, rider1, rider2, change):
+        """Log the rating change between two riders."""
+        self.stdout.write(
+            self.style.SUCCESS(
+                f'Rating change: {rider1} gained {change} points in the duel with {rider2}'
+            )
+        )

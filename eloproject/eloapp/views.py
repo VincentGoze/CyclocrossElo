@@ -52,7 +52,7 @@ def get_rating_at_date(rider_id, target_date):
 
 
 
-def ranking(request,typeranking,wj=0,u23=0):
+def ranking(request,typeranking,wj=0,u23=0,viz=0):
 
     # Fetch all riders and order them by rating
     riders = Rider.objects.filter(ratingtype=typeranking).order_by('-rating')
@@ -72,28 +72,29 @@ def ranking(request,typeranking,wj=0,u23=0):
     template = loader.get_template('ranking.html')
     context = {
         'rider_data': rider_data,
+        'viz':viz,
     }
     return HttpResponse(template.render(context, request))
 
 
 
 def rankingme(request):
-	return ranking(request,"Men Elite")
+	return ranking(request,"Men Elite",viz=1)
 
 def rankingwe(request):
-	return ranking(request,"Women")
+	return ranking(request,"Women",viz=2)
 
 def rankingmj(request):
-	return ranking(request,"Men Junior")
+	return ranking(request,"Men Junior",viz=3)
 
 def rankingwj(request):
-	return ranking(request,"Women",1)	
+	return ranking(request,"Women",wj=1)	
 
 def rankingmu(request):
-	return ranking(request,"Men Elite",0,1)
+	return ranking(request,"Men Elite",u23=1)
 
 def rankingwu(request):
-	return ranking(request,"Women",0,1)
+	return ranking(request,"Women",u23=1)
 
 
 
@@ -166,11 +167,10 @@ def riderdetails(request, id):
 def change(request):
 	data=[]
 	for j in ['Men Elite','Women','Men Junior']:
-		riders = Rider.objects.filter(ratingtype=j).order_by('-rating_change')[:20]
+		riders = Rider.objects.filter(ratingtype=j,current_position__lte=100).order_by('-rating_change')[:10]
+		riders2 = Rider.objects.filter(ratingtype=j,current_position__lte=100).order_by('rating_change')[:10]
 		data.append(enumerate(riders,1))
-	for j in ['Men Elite','Women','Men Junior']:
-		riders = Rider.objects.filter(ratingtype=j).order_by('rating_change')[:20]
-		data.append(enumerate(riders,1))
+		data.append(enumerate(riders2,1))
 	context={'data':data}	
 	template = loader.get_template('change.html')
 	return HttpResponse(template.render(context, request)) 	
