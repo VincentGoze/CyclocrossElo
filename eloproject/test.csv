@@ -1,30 +1,46 @@
 place,prenom,nom,racecategory,racename,date
-1,Lidia,CUSACK,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-2,Lison,DESPREZ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-3,Rafaelle,CARRIER,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-4,Mae,CABACA,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-5,Amálie,GOTTWALDOVÁ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-6,Zelie,LAMBERT,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-7,Lise,REVOL,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-8,Barbora,BUKOVSKÁ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-9,Giorgia,PELLIZOTTI,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-10,Greta,LAWLESS,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-11,Jeanne,DUTERNE,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-12,Lorena,PATINO VILLANUEVA,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-13,Nico,KNOLL,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-14,Ellie,MITCHINSON,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-15,Mille,FOLDAGER NIELSEN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-16,Arabella,BLACKBURN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-17,Noï,MOES,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-18,Sanne,LAURIJSSEN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-19,Zoe,ROCHE,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-20,Sara Aaboe,KALLESTRUP,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-21,Alyssa,WHITE,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-22,Zita,PEETERS,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-23,Lyllie,SONNEMANN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-24,Anna,PATTERSON,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-25,Nicole,CLAMANN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-26,Ana,LOPEZ BURGOS,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-27,Carmela,SOLARES GONZALEZ,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-28,Aoife,O'DONOVAN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
-29,Ava,SHIPMAN,Women Junior,UCI World Cup Dublin 2024,1 December 2024
+1,Benedikt,BENZ,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+2,Mattia,PROIETTI GAGLIARDONI,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+3,Vilmer,EKMAN,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+4,Thomas,HUITEMA,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+5,Lennert,MEEUSEN,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+6,Dima,ROELS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+7,Porter,MELVIN,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+8,Thomas,VERDONCK,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+9,Leon,ATKINS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+10,Emilien,BELZILE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+11,Rick,VERSLOOT,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+12,Lars,DE NYS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+13,Evan,MOORE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+14,Gijs,SCHOONVELDE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+15,Emilien,VERHEUGHE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+16,Dries,HEIRBAUT,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+17,Kian,REID,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+18,Stan,DERAM,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+19,Jip,SCHOUREN,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+20,Myrddin,DE CORTE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+21,Benedek,BERENCSI,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+22,Francesco,BARUZZI,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+23,Jasper,VLAEMINCK,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+24,Ferre,ERPELS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+25,Thomas,DENIGER,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+26,Richard,SEVERYN,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+27,Sagan,GOERTZ,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+28,Josse,JACOBS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+29,Mathis,RICHEZ,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+30,Ayato,TAJIMA,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+31,Fabrice,DUFRESNE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+32,Campbell,MCCONNELL,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+33,Grayson,FRANKS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+34,Yoran,AMPOORTER,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+35,Shuntaro,YAMADA,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+36,Antoine,MASSICOTTE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+37,Seppe,SPRANGERS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+38,Mathis,DE WAELE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+39,Sjoerd,VANDER BRACHT,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+40,Darian,GROENEVELD,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+41,Seppe,VANHOUT,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+42,Arne,ONGHENA,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+43,Lennox,PAPI,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+44,Thibau,STEVENS,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
+45,Flo,POPPE,Men Junior,Cyclocross Dendermonde 2025,5 January 2025
