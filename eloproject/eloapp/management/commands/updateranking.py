@@ -35,7 +35,7 @@ class Command(BaseCommand):
     def updateranking(self, typeranking):
     
         # Calculate the date 7 days ago
-        seven_days_ago = timezone.now() - timedelta(days=5)
+        seven_days_ago = timezone.now() - timedelta(days=32) #not 7 days because of late update, need to replace at start of new season
 
         # Fetch all riders and order them by rating
         riders = Rider.objects.filter(ratingtype=typeranking).order_by('-rating')
